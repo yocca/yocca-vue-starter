@@ -1,0 +1,36 @@
+.input-bg {
+	background: rgba(255, 255, 255, 0.1); 
+	box-sizing: border-box;
+	border-radius: 0.5em;
+}
+
+input, select, textarea {
+	height: 100%;
+	width: 100%;
+	
+	color: #FFFFFF;
+	background: none;
+	border: none;
+	padding-left: 5%;
+
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+input::placeholder {
+	color: #FFFFFF;
+}
+
+input:-ms-input-placeholder {
+	color: #FFFFFF;
+}
+
+input::-ms-input-placeholder {
+	color: #FFFFFF;
+}
+
+input:focus {
+	outline: none;
+}
+

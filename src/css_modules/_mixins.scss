@@ -1,0 +1,53 @@
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+@mixin animate($name, $duration, $timingFunction, $iteration, $direction, $delay: 0) {
+  -webkit-animation-name: $name;
+     -moz-animation-name: $name;
+       -o-animation-name: $name;
+          animation-name: $name;
+  -webkit-animation-timing-function: $timingFunction;
+     -moz-animation-timing-function: $timingFunction;;
+       -o-animation-timing-function: $timingFunction;
+          animation-timing-function: $timingFunction;
+  -webkit-animation-duration: $duration;
+     -moz-animation-duration: $duration;
+       -o-animation-duration: $duration;
+          animation-duration: $duration;
+  -webkit-animation-iteration-count: $iteration;
+     -moz-animation-iteration-count: $iteration;
+       -o-animation-iteration-count: $iteration;
+          animation-iteration-count: $iteration;
+  -webkit-animation-direction: $direction;
+     -moz-animation-direction: $direction;
+       -o-animation-direction: $direction;
+          animation-direction: $direction;
+  -webkit-animation-delay: $delay;
+     -moz-animation-delay: $delay;
+       -o-animation-delay: $delay;
+          animation-delay: $delay;
+
+}
+
+/* Animations */
+@include keyframes(fullscale) {
+	0% {
+		width: 0%;
+		height: 0%;
+	}
+	100% {
+		width: 100%;
+		height: 100%;
+	}
+}

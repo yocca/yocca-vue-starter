@@ -1,0 +1,41 @@
+{
+  "name": "yocca-vue-starter",
+  "version": "1.0.0",
+  "description": "Vue starter that includes webpack (loaders), gulp, and a few other packages to allow a quick, organized, and effective beginning to your development workflow.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode development --config webpack.config.js",
+    "watch": "webpack --watch --mode development --config webpack.config.js",
+		"build:prod": "webpack --mode production --config webpack.config.js",
+    "serve": "gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yocca/yocca-vue-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yocca/yocca-vue-starter/issues"
+  },
+  "homepage": "https://github.com/yocca/yocca-vue-starter#readme",
+  "dependencies": {
+    "vue": "^2.5.16"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "css-loader": "^0.28.10",
+    "gulp": "^3.9.1",
+    "html-webpack-plugin": "^3.0.6",
+    "node-sass": "^4.7.2",
+    "path": "^0.12.7",
+    "sass-loader": "^6.0.7",
+    "sass-resources-loader": "^1.3.3",
+    "style-loader": "^0.20.3",
+    "vue-loader": "^14.2.1",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12"
+  }
+}
